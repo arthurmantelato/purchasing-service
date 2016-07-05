@@ -10,11 +10,11 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import br.com.ecommerce.configuration.PurchasingServerConfiguration;
-import br.com.ecommerce.configuration.RepositoriesTestConfiguration;
+import br.com.ecommerce.configuration.RepositoriesMockConfiguration;
 import br.com.ecommerce.domain.purchase.Purchase;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = { PurchasingServerConfiguration.class, RepositoriesTestConfiguration.class })
+@SpringApplicationConfiguration(classes = { PurchasingServerConfiguration.class, RepositoriesMockConfiguration.class })
 public class PurchasingServiceTest {
 
 	@Autowired

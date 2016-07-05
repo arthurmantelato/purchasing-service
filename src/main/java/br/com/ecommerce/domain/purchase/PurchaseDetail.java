@@ -1,20 +1,15 @@
-package br.com.ecommerce.domain.purchase;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+	package br.com.ecommerce.domain.purchase;
 
 public class PurchaseDetail {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@Id
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String description;
 	private Integer quantity;
 	private Double value;
 
-	@ManyToOne(optional = false)
+	//@ManyToOne(optional = false)
 	private Purchase purchase;
 
 	public Long getId() {

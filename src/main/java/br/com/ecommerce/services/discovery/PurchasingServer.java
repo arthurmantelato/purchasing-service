@@ -8,11 +8,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Import;
 
 import br.com.ecommerce.configuration.PurchasingServerConfiguration;
-import br.com.ecommerce.configuration.RepositoriesTestConfiguration;
+import br.com.ecommerce.configuration.RepositoriesMockConfiguration;
 
 @EnableAutoConfiguration
 @EnableDiscoveryClient
-@Import({ PurchasingServerConfiguration.class, RepositoriesTestConfiguration.class })
+@Import({ PurchasingServerConfiguration.class, RepositoriesMockConfiguration.class })
 public class PurchasingServer {
 
 	private static Logger logger = LoggerFactory.getLogger(PurchasingServer.class);
